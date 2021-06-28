@@ -1,0 +1,90 @@
+\documentclass{../../submodules/TEX/document/ug/ug}
+\usepackage{float}
+\usepackage{color, colortbl}
+\usepackage[section]{placeins}
+\usepackage{mathtools}
+\usepackage{amsthm}
+%\usepackage[T1]{helvet}
+\usepackage[OT1]{fontenc} 
+
+
+\theoremstyle{plain}
+\newtheorem*{defn*}{Definition}
+\newtheorem*{ex*}{Example}
+
+
+\title{IObundle Example User Guide}
+\category{User Guide}
+
+%\getenv[\TEX]{TEX_DIR}
+\input{\TEX/color}
+
+\begin{document}
+\maketitle
+\cleardoublepage
+\tableofcontents
+\clearpage
+\listoftables
+\clearpage
+\listoffigures
+\cleardoublepage
+
+\section{\textcolor[rgb]{0,0,0}{Introduction}}
+\input{../intro}
+
+\section{Symbol}
+\input{../symb}
+
+\section{\textcolor[rgb]{0,0,0}{Features}}
+\input{../features}
+
+\section{\textcolor[rgb]{0,0,0}{Benefits}}
+\input{../benefits}
+
+\section{\textcolor[rgb]{0,0,0}{Deliverables}}
+\input{../deliverables}
+
+\section*{\textcolor[rgb]{0,0,0}{Block Diagram}}
+\input{../bd}
+
+\section{Interface Signals}
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{|l|l|p{8cm}|}
+      \hline
+      \rowcolor{iob-green}
+      \textbf{Signal} & \textbf{Direction} & \textbf{Description} \\
+      \hline
+      \hline
+
+     % \input is_tab.tex
+
+    \end{tabular}
+    \caption{General interface signals}
+    \label{tab:is}
+  \end{center}
+\end{table}
+
+
+\section{Timing Diagrams}
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=16cm]{spi.png}
+    \caption{SPI slave interface timing diagram}
+    \label{fig:spi}
+  \end{center}
+\end{figure}
+
+\section{Software Components}
+
+\section*{FPGA Resources}
+\input{\TEX/fpga}
+
+
+%\bibliographystyle{unsrt}
+%\bibliography{rep}
+%\nocite{*}
+
+\end{document}

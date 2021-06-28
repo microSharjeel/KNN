@@ -1,0 +1,8 @@
+//software accessible registers 
+`SWREG_W(TIMER_RESET,          1, 0) 
+`SWREG_W(TIMER_ENABLE,         1, 0) 
+`SWREG_W(TIMER_SAMPLE,         1, 0) 
+`SWREG_W(TIMER_WRAP_HIGH,  `WDATA_W, 0) 
+`SWREG_W(TIMER_WRAP_LOW,   `WDATA_W, 0) 
+`SWREG_R(TIMER_DATA_HIGH,  `WDATA_W, 0) 
+`SWREG_R(TIMER_DATA_LOW,   `WDATA_W, 0)

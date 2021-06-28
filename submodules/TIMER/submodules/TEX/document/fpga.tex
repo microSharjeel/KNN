@@ -1,0 +1,29 @@
+\begin{table}[H]
+\ifnum\XILINX=1
+\begin{minipage}{.45\linewidth}
+\centering
+\begin{tabular}{|l|r|}
+\hline
+\rowcolor{iob-green}
+\textbf{Resource}  & \textbf{Used} \\
+\hline
+\hline
+\input xil_results.tex 
+\end{tabular}
+\end{minipage}
+\fi
+\ifnum\INTEL=1
+\begin{minipage}{.45\linewidth}
+\centering
+\begin{tabular}{|l|r|}
+\hline
+\rowcolor{iob-green}
+\textbf{Resource}  & \textbf{Used} \\
+\hline
+\hline
+\input alt_results.tex 
+\end{tabular}
+\fi
+\end{minipage}
+\caption{Kintex Ultrascale (left) and Cyclone V GT (right)}
+\end{table}
